@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    // background-color: #d3d3d3;
+    background-color: #2d3033;
+    .logo {
+        animation-duration: 1.5s;
+        -webkit-animation-duration: 1.5s;
+        img {
+            width: 300px;
+            animation-iteration-count: infinite;
+            animation-duration: 2.5s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-duration: 2.5s;
+        }
+    }
+}
