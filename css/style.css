@@ -19,9 +19,218 @@ body .logo {
 
 body .logo img {
   width: 300px;
-  animation-iteration-count: infinite;
-  animation-duration: 2.5s;
+}
+
+body .btn {
+  background-color: #06b4e2;
+}
+
+body {
+  position: relative;
+  overflow: hidden;
+  /*  background: #111111 url(https://semantic-ui.com/images/bg-sky.jpg);*/
+  background-size: cover;
+  text-align: center;
+  padding: 0em;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0px;
+  border-bottom: none;
+  background-color: #06b4e2;
+  background-image: radial-gradient(farthest-corner, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.95));
+}
+
+.text {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  display: inline;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  height: auto;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
+  text-transform: none;
+  width: auto;
+  z-index: 10000;
+}
+
+.text a {
+  color: #06b4e2;
+  font-weight: bold;
+}
+
+body .grid {
+  margin: 0em;
+  padding: 15rem 0em;
+}
+
+.following.bar,
+body {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: background-color 3s ease-in-out 2s;
+  transition: background-color 3s ease-in-out 2s;
+  -webkit-perspective: 1000px;
+  -o-perspective: 1000px;
+  -ms-perspective: 1000px;
+  perspective: 1000px;
+}
+
+.following.bar iframe.github {
+  margin-top: 0px;
+}
+
+.pushed body,
+.pushed .following.bar {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.colored.following.bar,
+body.colored {
+  -webkit-animation-name: colors;
+  animation-name: colors;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-duration: 120s;
+  animation-duration: 120s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
-  -webkit-animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+
+body:after {
+  position: absolute;
+  z-index: 1;
+  width: 135%;
+  height: 135%;
+  top: 18%;
+  left: 0px;
+  content: "";
+  background: url(https://semantic-ui.com/images/ui.png);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-animation-name: splash;
+  animation-name: splash;
+  -webkit-transition: opacity 3s ease-in-out, transform 5s ease-in-out;
+  -webkit-transition: opacity 3s ease-in-out, -webkit-transform 5s ease-in-out;
+  transition: opacity 3s ease-in-out, -webkit-transform 5s ease-in-out;
+  transition: opacity 3s ease-in-out, transform 5s ease-in-out;
+  transition: opacity 3s ease-in-out, transform 5s ease-in-out, -webkit-transform 5s ease-in-out;
+  opacity: 0.06;
+  -webkit-animation-duration: 15s;
+  animation-duration: 15s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-transform: rotateX(50deg) rotateZ(0deg) rotateY(0deg) translateY(-14%) translateX(-14%) translateZ(370px);
+  transform: rotateX(50deg) rotateZ(0deg) rotateY(0deg) translateY(-14%) translateX(-14%) translateZ(370px);
+}
+
+.fixed.following.bar {
+  background-image: none;
+}
+
+.fixed.following.bar {
+  position: fixed;
+  top: 0px;
+  padding: 1em 0em;
+  background-color: #ffffff;
+}
+
+.fixed.light.following.bar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #dddddd;
+  -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.04);
+}
+
+@keyframes splash {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% -475px;
+  }
+}
+
+@-webkit-keyframes splash {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% -475px;
+  }
+}
+
+@keyframes colors {
+  0% {
+    background-color: #00b5ad;
+  }
+  12% {
+    background-color: #3b83c0;
+  }
+  25% {
+    background-color: #e07b53;
+  }
+  37% {
+    background-color: #d9499a;
+  }
+  50% {
+    background-color: #564f8a;
+  }
+  62% {
+    background-color: #f2c61f;
+  }
+  75% {
+    background-color: #d95c5c;
+  }
+  87% {
+    background-color: #5bbd72;
+  }
+  100% {
+    background-color: #f2c61f;
+  }
+}
+
+@-webkit-keyframes colors {
+  0% {
+    background-color: #00b5ad;
+  }
+  12% {
+    background-color: #3b83c0;
+  }
+  25% {
+    background-color: #e07b53;
+  }
+  37% {
+    background-color: #d9499a;
+  }
+  50% {
+    background-color: #564f8a;
+  }
+  62% {
+    background-color: #f2c61f;
+  }
+  75% {
+    background-color: #d95c5c;
+  }
+  87% {
+    background-color: #5bbd72;
+  }
+  100% {
+    background-color: #f2c61f;
+  }
 }
 /*# sourceMappingURL=style.css.map */
