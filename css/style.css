@@ -25,6 +25,10 @@ body .btn {
   background-color: #06b4e2;
 }
 
+body .btn:hover {
+  background-color: #0389ad;
+}
+
 body {
   position: relative;
   overflow: hidden;
@@ -58,6 +62,10 @@ body {
 .text a {
   color: #06b4e2;
   font-weight: bold;
+}
+
+.text a:hover {
+  color: #0389ad;
 }
 
 body .grid {
@@ -107,7 +115,7 @@ body.colored {
 
 body:after {
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   width: 135%;
   height: 135%;
   top: 18%;
